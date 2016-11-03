@@ -14,7 +14,7 @@ router.get('/herb-data', function(req,res){
 // simple route to render an HTML page that pulls data from our server and displays it on a page
 // NOTE that this is not a standard API route, and is really for testing
 router.get('/show-herbs', function(req,res){
-  res.render('show-pets.html')
+  res.render('show-herbs.html')
 })
 
 /**

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DemoApp</title>
+    <title>HerbDemo</title>
 
     <!-- Custom Font - Change 'Muli' to the font you want -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
@@ -22,35 +23,52 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
 
-<form action="/api/create" method="POST">
-  Add an Herb:<br>
-  <input type="text" name="herb" placeholder="List your herb"><br>
-  List the Botanical Name:<br>
-  <input type="text" name="botanicalName" placeholder="i.e. Spiraea ulmaria"><br>
-  Describe the Flavor:<br>
-  <input type="text" name="flavor" placeholder="example: sweet, sour, or nutty"><br>
-  List the Herb's Healing Properties:<br>
-  <input type="text" name="heal" placeholder="example: treats brusing and muscle soreness"><br>
-  Tell us How to Prepare this Herb:<br>
-  <input type="text" name="prepare" placeholder="example: use the leaves in tea"><br>
-  Link us to Your Favorite Recipe:<br>
-  <input type="text" name="recipe" placeholder="paste a link here"><br>
-  Link us to an Image of this Herb:<br>
-  <input type="text" name="url" placeholder="paste a link here"><br>
-  Tags:<br>
-  <input type="text" name="tags" placeholder="example: medicinal"><br>
+<body>
+    <div class="container">
 
-  <input type="submit" value="Submit">
-</form>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Digital Herbal</h1>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+        <form action="/api/create" method="POST">
+            Add an Herb:<br>
+            <input type="text" name="herb" placeholder="List your herb"><br><br>
+            List the Botanical Name:<br>
+            <input type="text" name="botanicalName" placeholder="i.e. Spiraea ulmaria"><br><br>
+            Describe the Flavor:<br>
+            <input type="text" name="flavor" placeholder="example: sweet, sour, or nutty"><br><br>
+            List the Herb's Healing Properties:<br>
+            <input type="text" name="heal" placeholder="example: treats brusing and muscle soreness"><br><br>
+            Tell us How to Prepare this Herb:<br>
+            <input type="text" name="prepare" placeholder="example: use the leaves in tea"><br><br>
+            Link us to Your Favorite Recipe:<br>
+            <input type="text" name="recipe" placeholder="paste a link here"><br><br>
+            Link us to an Image of this Herb:<br>
+            <input type="text" name="url" placeholder="paste a link here"><br><br>
+            Tags:<br>
+            <input type="text" name="tags" placeholder="example: medicinal"><br><br><br>
+
+            <input type="submit" value="Submit" class='btn btn-default btn-lg'>
+        </form>
+      </div>
+    </div>
+
+
+        <!-- end of container -->
+    </div>
 
 </body>
 
-  <!-- JQuery script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- JQuery script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-  <!-- CUSTOM JS -->
-  <script src="js/main.js"></script>
+<!-- CUSTOM JS -->
+<script src="js/main.js"></script>
+
 </html>
