@@ -25,7 +25,7 @@
 				console.log(data);
 				var herbs = data.herbs;
 				herbs.forEach(function(e){
-					var htmlToAppend = '<h1>'+e.name+'</h1>'+
+					var htmlToAppend = '<h1>'+e.herb+'</h1>'+
 					'<p>'+e.url+'</p>';
 					$('body').append(htmlToAppend);
 				})
