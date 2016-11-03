@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DemoApp</title>
+
+    <!-- Custom Font - Change 'Muli' to the font you want -->
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Custom CSS inside CSS folder -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<form action="/api/create" method="POST">
+  Add an Herb:<br>
+  <input type="text" name="herb" placeholder="List your herb"><br>
+  List the Botanical Name:<br>
+  <input type="text" name="botanicalName" placeholder="i.e. Spiraea ulmaria"><br>
+  Describe the Flavor:<br>
+  <input type="text" name="flavor" placeholder="example: sweet, sour, or nutty"><br>
+  List the Herb's Healing Properties:<br>
+  <input type="text" name="heal" placeholder="example: treats brusing and muscle soreness"><br>
+  Tell us How to Prepare this Herb:<br>
+  <input type="text" name="prepare" placeholder="example: use the leaves in tea"><br>
+  Link us to Your Favorite Recipe:<br>
+  <input type="text" name="recipe" placeholder="paste a link here"><br>
+  Link us to an Image of this Herb:<br>
+  <input type="text" name="url" placeholder="paste a link here"><br>
+  Tags:<br>
+  <input type="text" name="tags" placeholder="example: medicinal"><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+
+  <!-- JQuery script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="js/main.js"></script>
+</html>
