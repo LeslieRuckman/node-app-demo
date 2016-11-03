@@ -54,8 +54,8 @@ router.post('/api/create', function(req, res){
     // pull out the information from the req.body
     var herb = req.body.herb;
     var botanicalName = req.body.botanicalName;
-    var flavor = req.body.flavor;
-    var heal = req.body.heal;
+    var flavor = req.body.flavor.split(",");
+    var heal = req.body.heal.split(",");
     var prepare = req.body.prepare;
     var recipe = req.body.recipe;
     var url = req.body.url;
@@ -226,12 +226,12 @@ router.post('/api/update/:id', function(req, res){
       dataToUpdate['botanicalName'] = botanicalName;
     }
     if(req.body.flavor) {
-      flavor = req.body.flavor;
+      flavor = req.body.flavor.split(",");
       // add to object that holds updated data
       dataToUpdate['flavor'] = flavor;
     }
     if(req.body.heal) {
-      heal = req.body.heal;
+      heal = req.body.heal.split(",");
       // add to object that holds updated data
       dataToUpdate['heal'] = heal;
     }

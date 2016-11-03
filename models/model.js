@@ -8,8 +8,8 @@ var herbSchema = new Schema({
 	// name: {type: String, required: true}, // this version requires this field to exist
 	// name: {type: String, unique: true}, // this version requires this field to be unique in the db
 	botanicalName: String,
-	flavor: String,
-	heal: String,
+	flavor: [String],
+	heal: [String],
 	prepare: String,
 	recipe: String,
 	url: String,
